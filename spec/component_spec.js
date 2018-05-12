@@ -1,4 +1,4 @@
-import Component from '../src/component';
+import Component from '../src/javascripts/component';
 
 describe('Component', () => {
   describe('#constructor', () => {
