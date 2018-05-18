@@ -4,12 +4,12 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    './src/javascripts/index.js',
+    './src/javascripts/main.js',
     './src/stylesheets/application.scss'
   ],
 
   output: {
-    filename: 'application.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
 
@@ -29,10 +29,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        include: [path.resolve(__dirname,'src', 'templates')],
-        loaders: [
-          {loader: 'pug-loader', options: {pretty: true, doctype: 'html'}},
-        ]
+        loader: 'pug-loader'
       },
     ]
   },
@@ -44,7 +41,8 @@ module.exports = {
     }),
 
     new HTMLWebpackPlugin({
-      template: './src/templates/index.pug'
+      template: './src/templates/new.pug',
+      filename: 'new.html'
     }),
   ]
 };

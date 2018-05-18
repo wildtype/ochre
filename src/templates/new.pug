@@ -1,0 +1,10 @@
+doctype html
+head
+body(class='page:new_article')
+  .new-article
+    form.new-article__form
+      .new-article__title-container
+        label(for='article_title') Title
+        input.new-article__form-title(type='text' id='article_title' name='article[title]' placeholder='Title')
+      .new-article__content-container
+        #article-content
