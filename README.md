@@ -10,7 +10,7 @@ $ yarn
 Build in development mode:
 
 ```
-$ yarn production-build
+$ yarn build
 ```
 
 Run the tests:
@@ -22,6 +22,5 @@ $ yarn test
 To build with uglified js:
 
 ```
-$ yarn
 $ yarn production-build
-
+```
