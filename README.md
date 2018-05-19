@@ -1,16 +1,27 @@
 ## CMS for blog
 [![Build Status](https://travis-ci.org/wildtype/ochre.png?branch=master)](https://travis-ci.org/wildtype/ochre)
 
-To build:
+Install dependencies:
 
 ```
 $ yarn
-$ yarn webpack
 ```
 
-To run the tests:
+Build in development mode:
+
+```
+$ yarn production-build
+```
+
+Run the tests:
+
+```
+$ yarn test
+```
+
+To build with uglified js:
 
 ```
 $ yarn
-$ yarn karma start --single-run
-```
+$ yarn production-build
+
